@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'popins' ;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+ /*colores exportados para cambiar el nombre del color por el que nosotros queramos*/
+:root{
+    --verdeClaro : #C5E1B7 ;
+    --verdeMedio : #8CB27B;
+    --verdeOscuro : #0E5530;
+    --amarillo: #F1A11E;
+    --naranja: #E16B15;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.contenedor_logout{
+    height: 60vh;
+    background-color: var(--verdeClaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: popins;
+    color: var(--verdeOscuro);
+    
+    
+}
+.contenedor_logoutBoton{
+    display: flex;
+    gap: 3rem;
+  
+}
+.contenedor_logoutBoton--respuesta{
+    font-family: popins;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--amarillo);
+    border: none;
+    color: var(--verdeOscuro);
+}
+.contenedor_logoutBoton--respuesta:hover{
+    scale: 1.2;
+}

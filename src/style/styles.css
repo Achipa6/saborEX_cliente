@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'popins';
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+/* Colores exportados */
+:root {
+    --verdeClaro: #C5E1B7;
+    --verdeMedio: #8CB27B;
+    --verdeOscuro: #0E5530;
+    --amarillo: #F1A11E;
+    --naranja: #E16B15;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo header */
+.header {
+    width: 100%;
+    font-family: popins;
+    background-color: var(--naranja);
+    display: flex;
+    justify-content: center; /* Centra el contenido en la cabecera */
+    padding: 10px 0; /* Padding para el header */
+}
+
+.header .container {
+    width: 100%; /* Asegura que el contenedor ocupe el 100% */
+    max-width: 1200px; /* Limita el ancho en pantallas grandes */
+    display: flex;
+    justify-content: center; 
+}
+.header_navegacion {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Espacio entre enlaces */
+    padding: 0;
+    margin: 0; /* Asegúrate de que no haya márgenes */
+}
+
+.header_bienvenido {
+    color: var(--verdeClaro);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.header_links {
+    font-size: 2rem;
+    color: var(--verdeClaro);
+    text-decoration: none;
+}
+
+.header_links:hover {
+    color: var(--verdeOscuro);
+    text-decoration: none;
+}
+
+.header_links-login {
+    list-style: none;
+   
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header_navegacion {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+        gap: 1rem; /* Espacio reducido entre enlaces */
+    }
+
+    .header_bienvenido {
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+    .header_links {
+        font-size: 1rem;
+        color: var(--verdeClaro);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+    }
+}

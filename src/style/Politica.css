@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'popins' ;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+ /*colores exportados para cambiar el nombre del color por el que nosotros queramos*/
+ :root{
+    --verdeClaro : #C5E1B7 ;
+    --verdeMedio : #8CB27B;
+    --verdeOscuro : #0E5530;
+    --amarillo: #F1A11E;
+    --naranja: #E16B15;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    font-family: popins;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--verdeOscuro);
+    padding: 2rem;
+    background-color: var(--verdeClaro);
+}
+.contenedor_titulo{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.contenedor_texto{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 0.5rem 0;
+}
+/* Responsivo */
+@media (max-width: 768px) {
+    .contenedor_titulo {
+        font-size: 2.5rem; /* Tamaño más pequeño en móviles */
+    }
+    .contenedor_texto {
+        font-size: 1rem; /* Tamaño más pequeño en móviles */
+    }
+}

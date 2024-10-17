@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'popins' ;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+ /*colores exportados para cambiar el nombre del color por el que nosotros queramos*/
+ :root{
+    --verdeClaro : #C5E1B7 ;
+    --verdeMedio : #8CB27B;
+    --verdeOscuro : #0E5530;
+    --amarillo: #F1A11E;
+    --naranja: #E16B15;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.checkbox{
+    padding: 0.5rem;
+    color: var(--verdeOscuro);
+    font-family: popins;
+    font-size: 1.2rem;
+}
+.checkbox_text{
+    font-family: popins;
+    color: var(--verdeMedio);
+}

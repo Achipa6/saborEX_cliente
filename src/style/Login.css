@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'popins' ;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+ /*colores exportados para cambiar el nombre del color por el que nosotros queramos*/
+:root{
+    --verdeClaro : #C5E1B7 ;
+    --verdeMedio : #8CB27B;
+    --verdeOscuro : #0E5530;
+    --amarillo: #F1A11E;
+    --naranja: #E16B15;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--verdeClaro);
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.formulario_label{
+    color: var(--verdeOscuro);
+    font-size: 2rem;
+    font-family: popins;
+}
+.formulario_input{
+    font-family: popins;
+    background-color: var(--naranja);
+    color: var(--verdeOscuro);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 1rem 5rem;
+}
+.formulario_contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.formulario_boton{
+    background-color: var(--amarillo);
+    border: none;
+    padding: 1rem 1rem;
+    margin: 1rem 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: popins;
+    color: var(--verdeOscuro);
+}
+.formulario_boton:hover{
+    scale: 1.2;
+}
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .formulario_input {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .formulario_label {
+        font-size: 1.5rem;
+    }
+
+    .formulario_boton {
+        margin: 1rem;
+        padding: 0.8rem 1rem;
+    }
+}

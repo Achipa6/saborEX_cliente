@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'popins' ;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+ /*colores exportados para cambiar el nombre del color por el que nosotros queramos*/
+:root{
+    --verdeClaro : #C5E1B7 ;
+    --verdeMedio : #8CB27B;
+    --verdeOscuro : #0E5530;
+    --amarillo: #F1A11E;
+    --naranja: #E16B15;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: popins;
+    background-color: var(--verdeClaro);
+}
+
+.contenedor__titiloApp{
+    font-size: 10rem;
+    color: var(--verdeOscuro);
+    margin: 0;
+}
+.contenedor_filtados{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenedor_texto{
+    color: var(--verdeOscuro);
+    font-size: larger;
+    text-align: center;
+    padding: 0 2rem;
+}
+.card_textUsuario{
+    color: var(--verdeOscuro);
+}
+.contenedor_reviewsCards{
+    border-radius: 2rem;
+    width: auto;
+    text-align: center;
+    font-family: popins;
+    background-color: var(--verdeMedio);
+    color: var(--verdeOscuro);
+    padding: 0.5rem;
+}
+.contenedor_filtrado{
+    padding: 0 2rem;
+    background-color: var(--verdeClaro);
+    font-family: popins;
+
+}
+.contenedor_filtradoTexto{
+    font-size: 1.2rem;
+    color: var(--verdeOscuro);
+}
+.contenedor_filtradoCuadro{
+    font-family: popins;
+    color: var(--verdeOscuro);
+    margin: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    background-color: var(--naranja);
+}
+.contenedor_filtradoBoton{
+    font-family: popins;
+    border-radius: 2rem;
+    background-color: var(--amarillo);
+    color: var(--verdeOscuro);
+    padding: 0.5rem 1rem;
+    border: none;
+    
+}
+@media (max-width: 768px) {
+    .contenedor__titiloApp {
+        font-size: 4rem; /* Ajustar el tamaño en móviles */
+        
+    }
+    .contenedor_reviewsCards {
+        width: 100%; /* Asegura de que las tarjetas ocupen todo el ancho en móviles */
+    }
+    .contenedor_filtradoCuadro {
+        width: 100%; /* Asegura que los campos de entrada ocupen todo el ancho en móviles */
+        margin: 0 1rem 0 0 ;
+    }
+    .contenedor_filtradoBoton {
+        width: 100%; /* Asegura que los botones ocupen todo el ancho en móviles */
+    }
+    .contenedor_filtados{
+        display: flex;
+        flex-direction: column;
+    }
+}

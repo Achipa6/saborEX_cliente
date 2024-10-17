@@ -8,7 +8,7 @@ function FallbackSuspense() {
     
     <h2>Estamos esperando tus reseñas</h2>
     <p>Espera un poquito, no te vayas</p>
-    <img src="public/images/cargando.gif" alt="cargando" />
+    <img src="/images/cargando.gif" alt="cargando" />
 
     
     </>
